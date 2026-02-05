@@ -1,0 +1,102 @@
+{
+  "userProfiles": [
+    {
+      "id": "admin",
+      "name": "Quản trị viên",
+      "description": "Có toàn quyền truy cập hệ thống",
+      "permissions": {
+        "ecommerce": ["view", "create", "edit", "delete"],
+        "employees": ["view", "create", "edit", "delete"],
+        "contracts": ["view", "create", "edit", "delete"],
+        "wedding-dresses": ["view", "create", "edit", "delete"],
+        "member-management": ["view", "create", "edit", "delete"],
+        "pricing": ["view", "create", "edit", "delete"],
+        "page-management": ["view", "create", "edit", "delete"],
+        "customer-contact": ["view", "create", "edit", "delete"],
+        "booking-schedule": ["view", "create", "edit", "delete"],
+        "machine-schedule": ["view", "create", "edit", "delete"]
+      }
+    },
+    {
+      "id": "manager",
+      "name": "Quản lý",
+      "description": "Quản lý các hoạt động kinh doanh chính",
+      "permissions": {
+        "ecommerce": ["view", "create", "edit"],
+        "employees": ["view", "create", "edit"],
+        "contracts": ["view", "create", "edit"],
+        "wedding-dresses": ["view", "create", "edit", "delete"],
+        "member-management": ["view", "create", "edit"],
+        "pricing": ["view", "edit"],
+        "page-management": ["view", "edit"],
+        "customer-contact": ["view", "create", "edit"],
+        "booking-schedule": ["view", "create", "edit", "delete"],
+        "machine-schedule": ["view", "create", "edit", "delete"]
+      }
+    },
+    {
+      "id": "employee",
+      "name": "Thợ chụp ảnh",
+      "description": "Chuyên viên chụp ảnh và xử lý hình ảnh",
+      "permissions": {
+        "machine-schedule": ["view"]
+      }
+    },
+    {
+      "id": "sale",
+      "name": "Sale",
+      "description": "Chuyên viên tư vấn và bán hàng",
+      "permissions": {
+        "contracts": ["view", "create", "edit"],
+        "wedding-dresses": ["view", "create", "edit"],
+        "member-management": ["view", "create", "edit"],
+        "pricing": ["view", "create", "edit", "delete"],
+        "page-management": ["view", "create", "edit", "delete"],
+        "customer-contact": ["view", "create", "edit", "delete"],
+        "booking-schedule": ["view", "create", "edit", "delete"],
+        "machine-schedule": ["view", "create", "edit"]
+      }
+    },
+    {
+      "id": "marketing",
+      "name": "Marketing",
+      "description": "Chuyên viên marketing và quảng cáo",
+      "permissions": {
+        "contracts": ["view", "create", "edit"],
+        "wedding-dresses": ["view", "create", "edit"],
+        "member-management": ["view", "create", "edit"],
+        "pricing": ["view", "create", "edit", "delete"],
+        "page-management": ["view", "create", "edit", "delete"],
+        "customer-contact": ["view", "create", "edit", "delete"],
+        "booking-schedule": ["view", "create", "edit", "delete"],
+        "machine-schedule": ["view", "create", "edit"]
+      }
+    }
+  ],
+  "permissionDefinitions": {
+    "view": {
+      "name": "Xem",
+      "description": "Có thể xem thông tin và dữ liệu",
+      "icon": "EyeOutlined",
+      "color": "blue"
+    },
+    "create": {
+      "name": "Thêm",
+      "description": "Có thể tạo mới dữ liệu",
+      "icon": "PlusOutlined",
+      "color": "green"
+    },
+    "edit": {
+      "name": "Sửa",
+      "description": "Có thể chỉnh sửa dữ liệu hiện có",
+      "icon": "EditOutlined",
+      "color": "orange"
+    },
+    "delete": {
+      "name": "Xoá",
+      "description": "Có thể xóa dữ liệu",
+      "icon": "DeleteOutlined",
+      "color": "red"
+    }
+  }
+}
