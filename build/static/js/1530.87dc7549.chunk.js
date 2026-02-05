@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmardoll_admin=self.webpackChunkmardoll_admin||[]).push([[1530],{41530:function(n,e,r){r.r(e),r.d(e,{default:function(){return u}});r(72791);var d=r(80184);function u(){return(0,d.jsx)("div",{children:"WeddingDressPage"})}}}]);
+//# sourceMappingURL=1530.87dc7549.chunk.js.map
